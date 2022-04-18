@@ -14,14 +14,16 @@ class CustomHeaderView: UITableViewHeaderFooterView {
  
     
     class func getHeight() -> CGFloat {
-        return 45
+        return UITableView.automaticDimension
     }
     
     class func getReuseIdentifier() -> String {
         return "CustomHeaderView"
     }
     func setup(representable: CountryTableViewHeaderRepresntable){
+        self.contentView.backgroundColor = representable.backgroundColor
         lbl.attributedText = representable.countryName
+      
         
     }
 }

@@ -15,6 +15,8 @@ class CountryTableViewHeaderRepresntable : TableViewHeaderFooterRepresntable{
     
     var countryName: NSAttributedString
     
+    var backgroundColor : UIColor
+    
     init(countryName: String){
         
 
@@ -23,6 +25,8 @@ class CountryTableViewHeaderRepresntable : TableViewHeaderFooterRepresntable{
         self.viewHeight = CustomHeaderView.getHeight()
         
         self.reuseIdentifier = CustomHeaderView.getReuseIdentifier()
+        
+        self.backgroundColor = #colorLiteral(red: 0.8050937057, green: 0.8131842017, blue: 1, alpha: 1)
         
     }
 }
