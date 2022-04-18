@@ -52,5 +52,145 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA64CF30-1CF6-4D20-9224-D49D33D4B303"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Task1/CountriesViewController/CountriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B169599F-1D39-4B30-9D23-8D916CBBD64F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Task1/CountriesViewController/CountriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Task1/CountriesViewController/CountriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CountriesViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE - d2168189d7d3192d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task1.CountriesViewController.results.getter : Swift.Array&lt;Task1.Country&gt;"
+                  moduleName = "Task1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/israaahmad/Desktop/swift/Task1/Task1/CountriesViewController/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE - a724f144184dc921"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task1.CountriesViewController.results.setter : Swift.Array&lt;Task1.Country&gt;"
+                  moduleName = "Task1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/israaahmad/Desktop/swift/Task1/Task1/CountriesViewController/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE - 9d30e1fee3ffbf73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task1.CountriesViewController.results.modify : Swift.Array&lt;Task1.Country&gt;"
+                  moduleName = "Task1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/israaahmad/Desktop/swift/Task1/Task1/CountriesViewController/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE - d183540ede2fc68e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task1.CountriesViewController.results.modify : Swift.Array&lt;Task1.Country&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Task1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/israaahmad/Desktop/swift/Task1/Task1/CountriesViewController/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE - 7090bef604d86ba0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task1.CountriesViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Task1.CountriesViewController"
+                  moduleName = "Task1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/israaahmad/Desktop/swift/Task1/Task1/CountriesViewController/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "9FD81BDE-B5BD-4C57-93A0-978C29BF41DE - b7fab77cd35bbb7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task1.CountriesViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Task1.CountriesViewController&gt;"
+                  moduleName = "Task1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/israaahmad/Desktop/swift/Task1/Task1/CountriesViewController/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

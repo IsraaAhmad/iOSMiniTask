@@ -11,8 +11,10 @@ class CustomHeaderView: UITableViewHeaderFooterView {
 
     @IBOutlet weak var lbl: UILabel!
     
+ 
+    
     class func getHeight() -> CGFloat {
-        return 40
+        return 45
     }
     
     class func getReuseIdentifier() -> String {

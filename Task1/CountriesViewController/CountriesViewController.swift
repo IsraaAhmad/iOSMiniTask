@@ -17,7 +17,7 @@ class CountriesViewController: UIViewController {
     private (set) var viewModel: CountriesViewModel!
 
     override func viewDidLoad() {
-        
+        print("hh")
         fetchData() { (status) in
          switch status {
           case .success(let data):
