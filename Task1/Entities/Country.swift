@@ -7,13 +7,34 @@
 
 import Foundation
 
-struct Country  {
-    var code: String
-    var dial_code: String
-    var id: Int
-    var name: String
+///Country
+struct Country : Decodable {
+    
+    ///Code
+    var code: String?
+    
+    ///Dial Code
+    var dialCode: String?
+    
+    ///ID
+    var id: Int?
+    
+    ///Name
+    var name: String?
+    
+    
+    
+    ///Codeing Keys
+    enum CodingKeys: String, CodingKey {
+        case code
+        case dialCode = "dial_code"
+        case id
+        case name
+    }
     
 }
+
+
 
 
 

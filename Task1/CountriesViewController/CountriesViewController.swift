@@ -9,76 +9,50 @@ import UIKit
 import Alamofire
 
 class CountriesViewController: UIViewController {
-    
+    ///Result
     var results : [Country] = []
     
+    ///Table view
     @IBOutlet weak var tableView: UITableView!
     
+    ///Countries model view
     private (set) var viewModel: CountriesViewModel!
-
+    
+    /**
+     View did load.
+     */
     override func viewDidLoad() {
-        print("hh")
-        fetchData() { (status) in
-         switch status {
-          case .success(let data):
-            self.viewModel = CountriesViewModel(countries: data)
-            self.tableView.delegate = self
-            self.tableView.dataSource = self
-            self.tableView.register(UINib(nibName: "CustomHeaderView", bundle: Bundle.main), forHeaderFooterViewReuseIdentifier: "CustomHeaderView")
-            self.tableView.reloadData()
-             
-
-         case .failure(let Failure):
-            print(Failure)
-      
-      }
-    }
+        self.viewModel = CountriesViewModel()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(UINib(nibName: "CustomHeaderView", bundle: Bundle.main), forHeaderFooterViewReuseIdentifier: "CustomHeaderView")
+        self.tableView.sectionHeaderTopPadding = 0
+        FetchData()
     }
     
-    func fetchData(completion:@escaping (Result<[Country], NSError>) -> Void) {
-        AF.request(Router.get).responseJSON  { (response) in
-            guard let statusCode = response.response?.statusCode
-            else {
-                completion(.failure(errors.invalidResponse as NSError))
-                return
+    
+    /**
+     Fetch data from API
+     */
+    func FetchData(){
+        Model.getCountries{ (status) in
+            switch status {
+            case .success(let data):
+                self.viewModel.UpdateDate(countries: data)
+                self.tableView.reloadData()
+
+
+            case .failure(let Failure):
+                print(Failure)
+
             }
-            if statusCode == 200 {
-                guard let dataBack = response.value as? [String:Any] else {
-                   completion(.failure(errors.invalidInput as NSError))
-                    return }
-                guard let countriesData = dataBack["data"] as? [String: Any] else {
-                    completion(.failure(errors.invalidInput as NSError))
-                    return }
-                guard let countries = countriesData["countries"] as? [[String: Any]] else {
-                    completion(.failure(errors.invalidResponse as NSError))
-                    return
-                }
-                var data : [Country] = []
-                for country in countries{
-                   let code = country["code"] as? String ?? " "
-                   let dial_code = country["dial_code"] as? String ?? " "
-                   let id = country["id"] as? Int ?? 0
-                   let name = country["name"] as? String ?? " "
-                   let model = Country(code: code, dial_code: dial_code, id: id, name: name)
-                   data.append(model)
-                                }
-                completion(.success(data))
-                
-            }
-            else{
-                completion(.failure(errors.invalidStatusCode as NSError))
-            }
-            
         }
-
-        
     }
-  
+    
+    
+    
+    
 }
 
-enum errors:Error{
-    case invalidResponse
-    case invalidStatusCode
-    case invalidInput
-}
+
 

@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A6B4CB5DD69F19E5B29B26E7 /* Pods_Task1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A9CE0DFD9548F0ED27458A /* Pods_Task1.framework */; };
+		CF237532281015B0000E0C00 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF237531281015B0000E0C00 /* Countries.swift */; };
 		CF482D9A2806BB6B0079748A /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF482D992806BB6B0079748A /* CustomHeaderView.swift */; };
 		CF482D9C2806BBA60079748A /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF482D9B2806BBA60079748A /* CustomHeaderView.xib */; };
 		CF482D9E2806C1D70079748A /* CountryTableViewHeaderRepresntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF482D9D2806C1D70079748A /* CountryTableViewHeaderRepresntable.swift */; };
-		CF482DA22806EFE50079748A /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF482DA12806EFE50079748A /* Extention.swift */; };
+		CF482DA22806EFE50079748A /* CountriesViewControlllerExtentionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF482DA12806EFE50079748A /* CountriesViewControlllerExtentionTableView.swift */; };
+		CFCD0D5E280E96EA00E1C9F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD0D5D280E96EA00E1C9F0 /* Model.swift */; };
 		CFFE36132805511000B55251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE36122805511000B55251 /* AppDelegate.swift */; };
 		CFFE36152805511000B55251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE36142805511000B55251 /* SceneDelegate.swift */; };
 		CFFE361A2805511000B55251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFE36182805511000B55251 /* Main.storyboard */; };
@@ -37,10 +39,12 @@
 		6E48656682619C3173A3CE16 /* Pods-Task1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task1.debug.xcconfig"; path = "Target Support Files/Pods-Task1/Pods-Task1.debug.xcconfig"; sourceTree = "<group>"; };
 		86A9CE0DFD9548F0ED27458A /* Pods_Task1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA76FF9DA337F5301CE70BF7 /* Pods-Task1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task1.release.xcconfig"; path = "Target Support Files/Pods-Task1/Pods-Task1.release.xcconfig"; sourceTree = "<group>"; };
+		CF237531281015B0000E0C00 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		CF482D992806BB6B0079748A /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		CF482D9B2806BBA60079748A /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		CF482D9D2806C1D70079748A /* CountryTableViewHeaderRepresntable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewHeaderRepresntable.swift; sourceTree = "<group>"; };
-		CF482DA12806EFE50079748A /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		CF482DA12806EFE50079748A /* CountriesViewControlllerExtentionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewControlllerExtentionTableView.swift; sourceTree = "<group>"; };
+		CFCD0D5D280E96EA00E1C9F0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CFFE360F2805511000B55251 /* Task1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFE36122805511000B55251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFFE36142805511000B55251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,13 +110,10 @@
 		CF482D9F2806CD400079748A /* Represntables */ = {
 			isa = PBXGroup;
 			children = (
-				CF482D9D2806C1D70079748A /* CountryTableViewHeaderRepresntable.swift */,
+				CFCD0D62280EA90100E1C9F0 /* SectionRepresntable */,
+				CFCD0D61280EA8D700E1C9F0 /* HeaderRepresntable */,
+				CFCD0D60280EA8BA00E1C9F0 /* CellsRepresntables */,
 				CFFE3631280577A400B55251 /* TableViewCellRepresntable.swift */,
-				CFFE363928058F3200B55251 /* DialCodeTableViewCellRepresntable.swift */,
-				CFFE363728058C5200B55251 /* IDTableViewCellRepresntable.swift */,
-				CFFE363328057D3C00B55251 /* CodeTableViewCellRepresntable.swift */,
-				CFFE363B2805AC5300B55251 /* SectionRepresntable.swift */,
-				CFFE363528058A6200B55251 /* TableViewHeaderRepresntable.swift */,
 			);
 			path = Represntables;
 			sourceTree = "<group>";
@@ -121,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CFFE3626280552BD00B55251 /* CountriesViewController.swift */,
-				CF482DA12806EFE50079748A /* Extention.swift */,
+				CF482DA12806EFE50079748A /* CountriesViewControlllerExtentionTableView.swift */,
 			);
 			path = CountriesViewController;
 			sourceTree = "<group>";
@@ -133,6 +134,49 @@
 				CF482D9B2806BBA60079748A /* CustomHeaderView.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		CFCD0D5C280E8DEC00E1C9F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD0D5D280E96EA00E1C9F0 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFCD0D5F280EA88600E1C9F0 /* CountriesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE362D280574FD00B55251 /* CountriesViewModel.swift */,
+			);
+			path = CountriesViewModel;
+			sourceTree = "<group>";
+		};
+		CFCD0D60280EA8BA00E1C9F0 /* CellsRepresntables */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE363728058C5200B55251 /* IDTableViewCellRepresntable.swift */,
+				CFFE363328057D3C00B55251 /* CodeTableViewCellRepresntable.swift */,
+				CFFE363928058F3200B55251 /* DialCodeTableViewCellRepresntable.swift */,
+			);
+			path = CellsRepresntables;
+			sourceTree = "<group>";
+		};
+		CFCD0D61280EA8D700E1C9F0 /* HeaderRepresntable */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE363528058A6200B55251 /* TableViewHeaderRepresntable.swift */,
+				CF482D9D2806C1D70079748A /* CountryTableViewHeaderRepresntable.swift */,
+			);
+			path = HeaderRepresntable;
+			sourceTree = "<group>";
+		};
+		CFCD0D62280EA90100E1C9F0 /* SectionRepresntable */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE363B2805AC5300B55251 /* SectionRepresntable.swift */,
+			);
+			path = SectionRepresntable;
 			sourceTree = "<group>";
 		};
 		CFFE36062805511000B55251 = {
@@ -156,14 +200,15 @@
 		CFFE36112805511000B55251 /* Task1 */ = {
 			isa = PBXGroup;
 			children = (
+				CFFE363D2805B2CE00B55251 /* HarriViewModel.swift */,
+				CFCD0D5F280EA88600E1C9F0 /* CountriesViewModel */,
+				CFCD0D5C280E8DEC00E1C9F0 /* Model */,
 				CF482DA32806F3030079748A /* Header */,
 				CF482DA02806EFB90079748A /* CountriesViewController */,
 				CF482D9F2806CD400079748A /* Represntables */,
 				CF482D952806AB240079748A /* Cells */,
 				CFFE3628280552EE00B55251 /* Entities */,
-				CFFE363D2805B2CE00B55251 /* HarriViewModel.swift */,
 				CFFE362B2805549E00B55251 /* Router.swift */,
-				CFFE362D280574FD00B55251 /* CountriesViewModel.swift */,
 				CFFE36122805511000B55251 /* AppDelegate.swift */,
 				CFFE36142805511000B55251 /* SceneDelegate.swift */,
 				CFFE36182805511000B55251 /* Main.storyboard */,
@@ -178,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				CFFE36292805533200B55251 /* Country.swift */,
+				CF237531281015B0000E0C00 /* Countries.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -304,7 +350,7 @@
 				CFFE363C2805AC5300B55251 /* SectionRepresntable.swift in Sources */,
 				CFFE36152805511000B55251 /* SceneDelegate.swift in Sources */,
 				CFFE363428057D3C00B55251 /* CodeTableViewCellRepresntable.swift in Sources */,
-				CF482DA22806EFE50079748A /* Extention.swift in Sources */,
+				CF482DA22806EFE50079748A /* CountriesViewControlllerExtentionTableView.swift in Sources */,
 				CFFE362C2805549E00B55251 /* Router.swift in Sources */,
 				CF482D9A2806BB6B0079748A /* CustomHeaderView.swift in Sources */,
 				CFFE362E280574FD00B55251 /* CountriesViewModel.swift in Sources */,
@@ -313,9 +359,11 @@
 				CFFE3632280577A400B55251 /* TableViewCellRepresntable.swift in Sources */,
 				CFFE363E2805B2CE00B55251 /* HarriViewModel.swift in Sources */,
 				CFFE362A2805533200B55251 /* Country.swift in Sources */,
+				CFCD0D5E280E96EA00E1C9F0 /* Model.swift in Sources */,
 				CFFE363A28058F3200B55251 /* DialCodeTableViewCellRepresntable.swift in Sources */,
 				CFFE36302805769700B55251 /* CodeTableViewCell.swift in Sources */,
 				CFFE36422805BA7400B55251 /* DialCodeTableViewCell.swift in Sources */,
+				CF237532281015B0000E0C00 /* Countries.swift in Sources */,
 				CFFE3627280552BD00B55251 /* CountriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +522,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +552,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

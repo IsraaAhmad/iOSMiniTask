@@ -8,9 +8,16 @@
 import UIKit
 
 class CodeTableViewCell: UITableViewCell {
+    
+    //Code label
     @IBOutlet weak var lbl: UILabel!
     
+    
+    /** Setup
+    - Parameter representable:  Code Table View Cell Represntable
+     */
     func setup(representable: CodeTableViewCellRepresntable){
+        //set Code Label text
         lbl.text = representable.code
     }
 

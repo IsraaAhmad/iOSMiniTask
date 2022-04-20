@@ -8,11 +8,16 @@
 import UIKit
 
 class IDTableViewCell: UITableViewCell {
+    
 
+    //Label for ID
     @IBOutlet weak var lbl: UILabel!
     
-    
+    /** Setup
+    - Parameter representable:  ID Table View Cell Represntable
+     */
     func setup(representable: IDTableViewCellRepresntable){
+       //set ID label text
         lbl.text = representable.id
     }
 

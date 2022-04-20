@@ -6,8 +6,13 @@
 //
 
 import Foundation
+//Section Represntable
 class SectionRepresntable{
+    
+    ///Cell represntable
      var cellsRepresntables: [TableViewCellRepresntable] = []
+    
+    /// Section header represntable
      var SectionHeaderRepresntable : TableViewHeaderFooterRepresntable?
     
 }

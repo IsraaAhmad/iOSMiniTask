@@ -8,10 +8,16 @@
 import UIKit
 
 class DialCodeTableViewCell: UITableViewCell {
-
+    
+    //Label for Dial Code
     @IBOutlet weak var lbl: UILabel!
    
+    
+    /** Setup
+    - Parameter representable: Dial Code Table View Cell Represntable
+     */
     func setup(representable: DialCodeTableViewCellRepresntable){
+        //set Dial code label text
         lbl.text = representable.dialCode
     }
 
@@ -23,5 +29,6 @@ class DialCodeTableViewCell: UITableViewCell {
     class func getReuseIdentifier() -> String {
         return "DialCodeTableViewCell"
     }
+        
 
 }
